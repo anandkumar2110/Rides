@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+html{
+  background-color: rgb(41, 38, 38);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.box{
+  /* border: 5px solid red; */
+  display: flex;
+  background-color: #222222;
+  margin: 10px 10px;
+  font-weight: 400;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.img-box{
+  width: 25%;
+  padding: 25px;
+}
+
+.img-box img{
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+.data-box{
+  /* border: 3px solid blue ; */
+  width: 50% ;
+  text-align: left;
+  font-size: 1.5rem;
+  color: aliceblue;
+  line-height: 40px;
+}
+
+.data-box span{
+  font-weight: 600;
+  color: white ;
+}
+
+.location-box{
+  font-size: 1.5rem;
+  width: 25%;
+  /* border: 5px solid green; */
+  display: flex;
+  margin-top: 20px;
+}
+
+.location-box .state-name{
+  width: 50%;
+  text-align: center;
+}
+
+.location-box .city-name{
+  width: 50%; 
+  text-align: center;
+}
+
+nav .top-nav{
+  display: flex;
+}
+
+nav .user-div{
+  margin-left: 80%;
+  display: flex;
+}
+
+nav .user-img{
+  margin-top: 10px;
+  margin-left: 20px;
+  width:40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+nav .navlink{
+  color: rgb(227, 218, 218);
+  margin: 20px ;
+  text-decoration: none;
+}
+
+nav .active-link{
+  color:white;
+  margin: 20px ;
+}
+
+form{
+  width: 50vw;
+  margin: 30vh auto ;
+}
+
+form input,button{
+  display: block;
+  width: 100%;
+  margin: 10px ;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+form input:hover,button:hover{
+  padding: 15px;
+  background-color: aliceblue;
 }
